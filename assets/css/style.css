@@ -1,0 +1,1538 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-size: 1.2em;
+  background-color: #f9fbfd !important;
+  font-family: Rubik, sans-serif;
+  color: #384c74;
+}
+
+p {
+  padding: 0 0 20px 0;
+  line-height: 1.7em;
+}
+
+
+
+input,
+textarea {
+  outline: none;
+  border: none;
+  border: solid 1px #f2f2f2;
+}
+
+
+h2 {
+  font-size: 140%;
+}
+
+
+ul {
+  margin: 0px 0 0px 0px;
+}
+
+ul li {
+  margin: 0 0 6px 0;
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+
+.header {
+  background-color: rgb(25, 118, 210);
+  padding-top: 10px;
+  height: 50px;
+  font-size: 0.8em;
+  min-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+  
+}
+
+
+/*------------------------------------------------ LOGIN FORM --------------------------------------------------*/
+
+
+.modal,
+.modal-box {
+  z-index: 900;
+}
+
+.modal-sandbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, .8);
+  overflow: hidden;
+}
+
+
+.close-modal-1 {
+  color: #fff;
+  text-align: right;
+  cursor: pointer;
+  margin: 13px 17px 0 0;
+}
+
+
+
+
+
+
+/* BASIC */
+
+
+
+.wrapper a {
+  color: #cccccc;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.wrapper h2 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 20px 8px 10px 8px;
+  color: #cccccc;
+}
+
+
+
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 0.5rem;
+  background: #1F1F1F;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 2.5px 1.3px 6.5px -1px #00000017, 10px 5px 26px -1px #0000000b;
+  text-align: center;
+}
+
+#formFooter {
+  background-color: #262626;
+  border-top: 1px solid #cccccc;
+  padding: 25px;
+  text-align: center;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+
+
+/* TABS */
+
+h2.inactive {
+  color: #cccccc;
+}
+
+h2.active {
+  color: #fff;
+  border-bottom: 2px solid rgb(42, 133, 224);
+}
+
+
+
+/* FORM TYPOGRAPHY*/
+
+.wrapper input[type=button],
+input[type=submit],
+input[type=reset] {
+  background-color: rgb(42, 133, 224);
+  border: none;
+  color: #fff;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  box-shadow: 0 5px 10px 0 rgba(95, 186, 233, 0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 0.5rem;
+  margin: 15px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.wrapper input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover {
+  background-color: rgb(39, 123, 208);
+}
+
+.wrapper input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.wrapper input[type=text] {
+  background-color: #262626;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.wrapper input[type=text]:focus {
+  border-bottom: 2px solid rgb(42, 133, 224);
+}
+
+.wrapper input[type=text]:placeholder {
+  color: #cccccc;
+}
+
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fadeIn ease-in 1;
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* Simple CSS3 Fade-in Animation */
+.underlineHover:after {
+  display: block;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(42, 133, 224);
+  content: "";
+  transition: width 0.2s;
+}
+
+.underlineHover:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.underlineHover:hover:after {
+  width: 100%;
+}
+
+
+
+/* OTHERS */
+
+*:focus {
+  outline: none;
+}
+
+#icon {
+  width: 60%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+.main,
+.logo,
+.menubar,
+.site_content,
+.footer .pagination-block {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+.Login_btn,
+.Logout_btn {
+  margin-left: 37px;
+  display: inline-block;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 0.5rem;
+  padding: 5px 15px 5px 15px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  box-shadow: 2.5px 1.3px 6.5px -1px #00000017, 10px 5px 26px -1px #0000000b;
+}
+
+
+.Logout_btn:hover {
+  color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+.Login_btn:hover {
+  color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+
+
+
+
+.logo_text h1,
+.logo_text h1 a,
+.logo_text h1 a:hover {
+  padding: 10px 0 0 0;
+  color: #39ace7;
+  letter-spacing: 15px;
+  text-decoration: none;
+
+}
+
+.logo_text h2 {
+  font-size: 0.9em;
+  padding: 0px 0 0 0;
+  color: #A5A5A5 !important;
+  font-size: 85%;
+  letter-spacing: 3px;
+
+}
+
+hr {
+  margin-bottom: 10px;
+  margin-right: 2%;
+  border: 0;
+  border-top: 1px solid rgb(110, 110, 110);
+}
+
+.menubar {
+  width: 700px;
+  height: 46px;
+
+}
+
+
+
+.menu-item {
+  float: left;
+  list-style: none;
+  margin: 2px 2px 0 0;
+  height: 20px;
+  padding: 5px 35px 5px 28px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.inProgress {
+  color: #cccccc;
+  float: left;
+  list-style: none;
+  height: 20px;
+  padding: 5px 35px 5px 28px;
+  text-decoration: none;
+
+}
+
+
+
+.active {
+  color: #fff;
+}
+
+
+
+ul.menu .menu-item:hover {
+  color: #f2f2f2;
+}
+
+.site_content {
+  width: 1160px;
+  overflow: hidden;
+  margin: 10px auto 0 auto;
+  background-color: transparent;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sidebar_container {
+  float: left;
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+.sidebar {
+  float: left;
+  width: 285px;
+  padding: 5% 5% 5% 5%;
+  margin: 1.5rem 10px 10px 10px;
+  border-width: 0;
+  box-shadow: 2.5px 1.3px 6.5px 2px #00000017, 10px 5px 26px -1px #0000000b;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+.sidebar_header {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.menu-item-search {
+  list-style: none;
+  margin-left: 85%;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: 2px solid #1F1F1F;
+}
+
+.menu-item-search-active {
+  list-style: none;
+  margin-left: 85%;
+  padding: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: 2px solid #1F1F1F;
+  background-color: #47bcd431;
+}
+
+.sidebar h2 {
+  color: #1f2d41;
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: Rubik, sans-serif;
+  font-size: 1.4rem;
+  display: block;
+}
+
+.clear-filters_btn {
+  margin-left: 9px;
+  background-color: transparent;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #de4437 !important;
+  font-size: 0.9rem;
+  border: none;
+  padding: 0;
+}
+
+.clear-filters_btn:hover {
+  color: #b13328 !important;
+}
+
+.select-header {
+  display: block;
+  margin-left: 9px;
+  margin-bottom: 5px;
+}
+
+.select-item {
+  margin-left: 9px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 90%;
+  border-bottom: 1px solid #1F1F1F !important;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  cursor: pointer;
+
+  font-family: Rubik, sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+input[type="search"] {
+  margin-left: 9px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  width: 90%;
+  border: 1px solid #1F1F1F !important;
+  border-radius: 0.5rem;
+  font-family: Rubik, sans-serif;
+  font-size: 1rem;
+  color: #555;
+}
+
+.btn {
+  margin-left: 9px;
+  padding: 5px;
+  width: 90%;
+  border: 1px solid #1F1F1F !important;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-family: Rubik, sans-serif;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.btn:hover {
+  background-color: #f9f9f9;
+}
+
+
+/*-------------------------------------- Checkboxes -------------------------------------*/
+
+.checkbox {
+  margin-bottom: 0.2em;
+  margin-left: 9px;
+  margin-bottom: 5px;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox>input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox>span {
+  display: inline-flex;
+  align-items: center;
+  font-size: medium;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox>span::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
+  border-color: #000;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox>input:not(:disabled):active+span::before {
+  background-color: #000;
+  border-color: #000
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox>input:focus+span::before {
+  box-shadow: 0 0 0 0.2rem #000000(0, 123, 255, 0.25);
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox>input:focus:not(:checked)+span::before {
+  border-color: #000;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox>input:checked+span::before {
+  border-color: #000;
+  background-color: #000;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox>input:disabled+span::before {
+  background-color: #e9ecef;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+
+.lables_passreg_text {
+  font-size: 0.7em;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+
+.sidebar ul {
+  margin: 0;
+}
+
+.sidebar ul li {
+  list-style-type: none;
+  margin: 0 0 0 0;
+}
+
+.sidebar .rating_sidebar {
+  float: right;
+}
+
+
+.content {
+  text-align: left;
+  width: 790px;
+  float: right;
+  margin-top: 1.5rem;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.films_block {
+  margin-bottom: 5%;
+}
+
+/* ------------------------------------- FILM CARD ---------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.card {
+  display: inline-block;
+  margin: 15px;
+  background-color: #fff;
+  border-width: 0;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 1.3px 6.5px 2px #00000017, 10px 5px 26px -1px #0000000b;
+  overflow: hidden;
+  width: 365px;
+  font-size: large;
+}
+
+
+.card-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 20px 10px 20px;
+  height: 160px;
+  text-align: left;
+}
+
+.card-title {
+  height: 40px;
+  font-size: 17px;
+  color: #1f2d41;
+  font-weight: 600;
+  font-family: Rubik, sans-serif;
+
+}
+
+.card-body span {
+  display: block;
+  font-size: 13px;
+  margin: auto 0px auto 0px;
+  text-align: left;
+}
+
+
+.user {
+  display: flex;
+  margin-top: 5px;
+}
+
+
+.favorite__btn {
+  margin: 10px 10px 0px 0px;
+  background: url("../img/heart.svg");
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.favorite__btn--active {
+  background: url("../img/heart_red.svg");
+}
+
+.to-read__btn {
+  margin: 10px 10px 0px 0px;
+  display: inline-flex;
+  background: url("../img/bookmark.png");
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.to-read__btn--active {
+  background: url("../img/bookmark-stored.png");
+}
+
+.film-info h5 {
+  margin: 0;
+  color: #39ace7;
+}
+
+.film-info small {
+  color: #545d7a;
+}
+
+small {
+  user-select: none;
+}
+
+.film-info_btn {
+  width: 100%;
+  background-color: transparent;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-left: 1px solid transparent;
+  font-size: 16px;
+  color: #000;
+  text-align: left;
+  align-items: flex-end;
+  margin-top: auto;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color .15s ease;
+}
+
+.film-info_btn:hover {
+  background-color: #f9f9f9;
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+.posts .posts_content {
+  font-size: 0.8em;
+}
+
+
+.pagination-block {
+  width: 100%;
+  background-color: transparent;
+  color: #a8aa94;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  min-width: 710px;
+}
+
+.pagination-block h1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: #1f2d41;
+  font-weight: 600;
+  line-height: 1.4;
+  font-family: Rubik, sans-serif;
+  font-size: 1.9rem;
+}
+
+.pagination-btns {
+  display: inline-block;
+  width: 82%;
+  text-align: right;
+}
+
+.pagination-block small {
+  display: block;
+
+}
+
+
+.Previous-page_btn,
+.Next-page_btn {
+  user-select: none;
+  margin-left: 0px;
+  margin-right: 15px;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 1px solid rgb(42, 133, 224);
+  border-radius: 0.5rem;
+  padding: 5px;
+  color: #fff;
+  font-size: 17px;
+  width: 15%;
+  font-weight: normal;
+  background-color: rgb(42, 133, 224);
+  box-shadow: 0 3px 10px 0 rgba(95, 186, 233, 0.4);
+}
+
+.pagination-btns button:disabled {
+  background-color: #9ed0d8;
+  border: 1px solid #9ed0d8;
+  box-shadow: none;
+}
+
+.pagination-btns button:disabled:hover {
+  background-color: #9ed0d8;
+  box-shadow: none;
+  box-shadow: none;
+}
+
+
+.pagination-btns button:hover {
+  background-color: rgb(39, 122, 205);
+  box-shadow: 0 3px 10px 0 rgba(49, 106, 135, 0.4);
+}
+
+.footer {
+  width: 1160px;
+  height: 200px;
+  padding: 28px 0 5px 0;
+  text-align: center;
+  background-color: #1F1F1F;
+  color: #a8aa94;
+  margin: 20px auto 0 auto;
+  border-radius: 0.5rem;
+  box-shadow: 2.5px 1.3px 6.5px 2px #00000017, 10px 5px 26px -1px #0000000b;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #a8aa94;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer p {
+  padding: 0 0 10px 0;
+}
+
+.footer-social p {
+  color: #6A6A6A;
+  font-size: 18px;
+}
+
+.footer-social a>img {
+  width: 32.57px;
+  height: 32.2px;
+  margin-top: 5px;
+  margin-right: 16px;
+}
+
+
+/* ------------------------------------------------ Страница просмотра фильма -------------------------------------------*/
+
+.film-page_container {
+  width: 1160px;
+  overflow: hidden;
+  margin: 30px auto 0 auto;
+  background-color: transparent;
+  box-shadow: 2.5px 1.3px 6.5px 2px #00000017, 10px 5px 26px -1px #0000000b;
+  border-radius: 0.5rem;
+}
+
+.film-page_content {
+  margin: 0% 0% 0% 0%;
+  padding: 3% 5% 3% 5%;
+  border-radius: 0.5rem;
+  background-color: #fff;
+
+}
+
+.film-page_content h2 {
+  font-weight: bold;
+}
+
+.user-filmPage {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+.action-todo {
+  width: 100%;
+  background-color: #e4ec04;
+  border-radius: 0.5rem;
+  color: rgb(0, 0, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: medium;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.info_film_page {
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.info_film_page .label {
+  font-weight: bold;
+}
+
+.info_film_page .value {
+  font-size: 1em;
+  font-weight: normal;
+  margin-right: 3%;
+}
+
+.descriptions_film {
+  margin-top: 2%;
+  min-height: 320px;
+}
+
+.descriptions_film img {
+  float: left;
+  margin-right: 2%;
+  border-radius: 0.5rem;
+  height: 320px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+  border-radius: 0.5rem;
+}
+
+
+
+
+
+.info_film {
+  margin-bottom: 5%;
+  background-color: #f9f9f9;
+  padding: 5%;
+  height: 270px;
+}
+
+.info_film img {
+  float: left;
+  margin-right: 2%;
+  border-radius: 0.5rem;
+  border: solid 5px #dad7d5;
+  width: 25%;
+}
+
+
+.button {
+  background-color: #7268ad;
+  padding: 2%;
+  color: white;
+  border-radius: 0.5rem;
+  float: right;
+  margin-top: 5%;
+  clear: both;
+  font-size: 0.8em;
+}
+
+.button a {
+  color: white;
+}
+
+
+table {
+  width: 100%;
+  border: solid 1px #f4f4f4;
+}
+
+td {
+  padding: 2%;
+  border: solid 1px #f4f4f4;
+}
+
+td img {
+  width: 60px;
+  vertical-align: middle;
+}
+
+.center {
+  text-align: center;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+/*--------------------------------------------------- SEARCH PAGE --------------------------------*/
+
+.sort-btn {
+  width: 90%;
+  margin: 10px auto auto 10px;
+  background-color: transparent;
+  border: 1px solid #47bcd4;
+  padding: 8px;
+  cursor: pointer;
+  color: #000000 !important;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+}
+
+.sort-btn:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+.content-search {
+  text-align: left;
+  width: 790px;
+  min-height: 868px;
+  float: right;
+  margin-top: 1.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  border: 1px solid #000;
+  border-left: none;
+  padding-top: 20%;
+  padding-left: 15%;
+}
+
+
+.films_block-serch {
+  margin-bottom: 5%;
+}
+
+
+.search-btns {
+  display: inline-block;
+  width: 100%;
+
+  margin-top: 15px;
+  margin-left: 9px;
+}
+
+.search-block small {
+  display: block;
+
+}
+
+
+
+.Previous-search_btn,
+.Next-search_btn {
+  user-select: none;
+  margin-left: 0px;
+  margin-right: 15px;
+  display: inline-block;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 8px;
+  color: #000;
+  font-size: 14px;
+  width: 42.5%;
+  font-weight: normal;
+  background-color: transparent;
+}
+
+.Previous-search_btn {
+  border: 1px solid #de4437;
+}
+
+.Next-search_btn {
+  border: 1px solid #0a9616;
+}
+
+.search-btns button:disabled {
+  background-color: #e8e8e8;
+  border: none
+}
+
+.search-btns button:disabled:hover {
+  box-shadow: none;
+}
+
+.search-btns button:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.No-films {
+  margin-top: auto;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+/* CSS Mobile */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+
+  header {
+    position: initial;
+  }
+
+  ul.menu {
+    padding: 0;
+  }
+
+  .header {
+    min-width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .logo {
+    width: 100%;
+    padding: 0;
+  }
+
+
+
+  .login {
+    height: auto;
+    margin-top: 70px;
+  }
+
+  .login .form-container {
+    width: auto;
+    margin: auto;
+  }
+
+
+
+  hr {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+
+
+
+  .site_content {
+    width: 100%;
+  }
+
+  .menubar {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  .Login_btn {
+    padding: 5px 10px 5px 10px;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .Logout_btn {
+    padding: 5px 10px 5px 10px;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+
+
+  .form h3 {
+    font-size: 15px;
+  }
+
+  .form label {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .form input {
+    min-width: 93%;
+
+  }
+
+
+  .form button {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+
+  .content {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 0 0px;
+  }
+
+  .content-search {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 0 0;
+    min-height: 0px;
+    border: none;
+  }
+
+  .defoult {
+    display: none;
+  }
+
+  .content_header {
+    display: none;
+  }
+
+  .site_content {
+    width: 100%;
+    text-align: left;
+    padding: 0px;
+  }
+
+  .sidebar_container {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sidebar hr {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .card {
+    width: 350px;
+    text-align: left;
+    margin: 0px 0px 15px 0px;
+  }
+
+
+
+  .pagination-block {
+    min-width: 100%;
+    height: 20%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .pagination-block h1 {
+    margin-bottom: 15px;
+  }
+
+  .pagination-btns button {
+    width: 40%;
+    text-align: center;
+  }
+
+
+  .footer {
+    background-color: #1F1F1F;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    border-radius: 0px;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+
+  ul.menu {
+    float: none;
+  }
+
+  .menu-item,
+  .inProgress {
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+
+
+  .pagination-block h1 {
+    font-size: 1.5rem;
+  }
+
+  .posts_content p {
+    line-height: 1.5em;
+    padding: 3%;
+    text-align: left;
+  }
+
+  .posts p {
+    font-size: 120%;
+  }
+
+
+  .info_film {
+    float: none;
+    height: 100%;
+  }
+
+  .info_film img {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+
+  .button {
+    float: none;
+  }
+
+  /* rating page */
+  table {
+    display: block;
+  }
+
+  th {
+    font-size: 75%;
+  }
+
+  td {
+    padding: 0;
+    margin: 0;
+    font-size: 95%;
+    text-align: left;
+  }
+
+  /* show page */
+
+  .film-page_container {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+
+  .film-page_content h2 {
+    font-size: medium;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .descriptions_film {
+    width: 100%;
+    text-align: left;
+    font-size: medium;
+  }
+
+  .info_film_page {
+    display: block;
+  }
+
+  .descriptions_film img {
+    float: left;
+    width: 65%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5%;
+    margin-right: 70px;
+  }
+
+  .action-todo {
+    font-size: x-small;
+  }
+
+  .user-filmPage {
+    padding-left: 10px;
+    padding-right: 10px;
+    float: right;
+  }
+
+  .reviews {
+    text-align: left;
+    width: 96%;
+  }
+
+  .send input[type="text"] {
+    width: 80%;
+  }
+
+  .send textarea {
+    width: 85%;
+  }
+
+  .content-search {
+    margin-top: 3rem;
+  }
+
+}
