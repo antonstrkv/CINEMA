@@ -1,4 +1,4 @@
-# Movie_Project
+# CINEMA
 
 Technology: JavaScript, React, Redux, TypeScript, React Router, ESLint, Prettier, Rewire-alias
 
@@ -24,40 +24,49 @@ Plans:
 
 Home page:
 
-![image](https://user-images.githubusercontent.com/93431655/178475977-9e1681cf-7d86-49fe-a049-1ebe1ce115a5.png)
+![image](https://user-images.githubusercontent.com/93431655/180978815-96d9259e-463c-4fd4-b6b9-512d0d9d5b99.png)
 
-![image](https://user-images.githubusercontent.com/93431655/178476015-0d6666ef-70e1-47b7-8c24-771e4fd40de1.png)
+![image](https://user-images.githubusercontent.com/93431655/180978934-b972b878-f3ac-422a-9da4-cd3e6af83ca0.png)
+
+![image](https://user-images.githubusercontent.com/93431655/180981737-a4e09bb1-4a38-496c-9fd0-8d0d1c0b2991.png)
+
 
 
 Autorization form:
 
-![image](https://user-images.githubusercontent.com/93431655/178476167-acde88bf-dd0c-4e5f-b779-1cbf4c0de34b.png)
+![image](https://user-images.githubusercontent.com/93431655/180979079-437d21f3-0cdc-4449-92fe-477deb1d5789.png)
 
-![image](https://user-images.githubusercontent.com/93431655/178476457-a6017dc6-9c57-4c20-8e5a-88d25992245a.png)
+![image](https://user-images.githubusercontent.com/93431655/180979343-efe1e94e-462a-4377-a1c5-ddc06bff28b5.png)
 
 
 Switching in the filtering block by lists and sorting by genres:
 
-![image](https://user-images.githubusercontent.com/93431655/178476613-b6265df4-dbde-4578-84af-5334ee27599d.png)
+![image](https://user-images.githubusercontent.com/93431655/180979650-ae817b80-767f-4b06-b4d5-4abfac6b998d.png)
 
-![image](https://user-images.githubusercontent.com/93431655/178477706-5f511fbe-ac02-4da4-bbfb-b95a668c8add.png)
+![image](https://user-images.githubusercontent.com/93431655/180980034-e17dbb1f-a122-4296-8a4a-cb34136617fb.png)
 
-![image](https://user-images.githubusercontent.com/93431655/178480757-951abf95-8d80-4e77-ad4a-ef85b76d47a4.png)
+![image](https://user-images.githubusercontent.com/93431655/180980210-3e03da7d-31c3-4a5b-95c2-962ee3474d3e.png)
 
 
 Filtering by popularity and release date:
 
-![image](https://user-images.githubusercontent.com/93431655/178687335-8eef5982-06e9-4998-90cb-10be329478cf.png)
+![image](https://user-images.githubusercontent.com/93431655/180980416-6d82ec4c-d3d7-48e1-9fc1-63f1e083a12b.png)
 
 Filtering by release date, genres and rating:
 
-![image](https://user-images.githubusercontent.com/93431655/178699850-4f62d63a-db9f-4e7f-af8f-55e23715e843.png)
+![image](https://user-images.githubusercontent.com/93431655/180980631-f637247c-3a49-4592-a42f-4e4ca46d326b.png)
+
+![image](https://user-images.githubusercontent.com/93431655/180980924-b30687de-9d95-4786-af41-f5787af81ebb.png)
+
 
 
 Film page:
 
-![image](https://user-images.githubusercontent.com/93431655/178476950-38b9bb71-f4a9-4283-b025-7d66fb206744.png)
+![image](https://user-images.githubusercontent.com/93431655/180981190-bd446f63-a9a9-4e33-bf19-06c26b40678c.png)
 
 The Search page gives new types of filtering and allows you to select a film one by one (UI is still in progress)
 
-![image](https://user-images.githubusercontent.com/93431655/178477240-c70e3675-d2ae-45c2-bf96-d0ab71196745.png)
+![image](https://user-images.githubusercontent.com/93431655/180981358-02ac6bad-8800-4a72-8410-3d943d480855.png)
+
+![image](https://user-images.githubusercontent.com/93431655/180981527-2378d52b-79b4-4ae4-b4ed-3be4edbc573c.png)
+
