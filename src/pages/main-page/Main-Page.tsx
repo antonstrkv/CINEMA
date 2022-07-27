@@ -8,10 +8,10 @@ import { Action } from "src/types/types";
 
 
 const MainPage: FC = () => {
-	const [SORT_TYPE, setSORT_TYPE] = useState<Action>(sortPopularityDescendingList());
-	const [LIST_TO_SHOW, setLIST_TO_SHOW] = useState<string>("All");
+	const [SORT_TYPE, set_SORT_TYPE] = useState<Action>(sortPopularityDescendingList());
+	const [LIST_TO_SHOW, set_LIST_TO_SHOW] = useState<string>("All");
 	const [FILMS, set_FILMS] = useState<Array<object>>(FILMS_ALL);
-	const [currentYear, setNewCurrentYear] = useState<string>("2020");
+	const [currentYear, setCurrentYear] = useState<string>("2020");
 	const [activeGeners, setActiveGeners] = useState<Array<number | undefined>>([]);
 
 
@@ -43,9 +43,7 @@ const MainPage: FC = () => {
 	}, []);
 
 
-	const set_SORT_TYPE = useCallback((newSortType: Action) => setSORT_TYPE(newSortType), []);
-	const setCurrentYear = useCallback((newCurrentYear: string) => setNewCurrentYear(newCurrentYear), []);
-	const set_LIST_TO_SHOW = useCallback((listToShow: string) => setLIST_TO_SHOW(listToShow), []);
+	
 
 
 	return (
