@@ -43,9 +43,6 @@ const MainPage: FC = () => {
 	}, []);
 
 
-	
-
-
 	return (
 		<div className="site_content">
 				<CreateSidebar set_SORT_TYPE={set_SORT_TYPE} setCurrentYear={setCurrentYear} setNewActiveGeners={setNewActiveGeners} 
