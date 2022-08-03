@@ -4,7 +4,8 @@ import { CreateFilmsList } from "./components/films-list/Films-List";
 import { CreateSidebar } from "./components/sidebar/Sidebar";
 import { FILMS_ALL } from "src/constants/Constants";
 import { sortPopularityDescendingList } from "src/redux/actions";
-import { Action } from "src/types/types";
+import { Action, IisAuthorized } from "src/types/types";
+import { useSelector } from "react-redux";
 
 
 const MainPage: FC = () => {
@@ -13,7 +14,8 @@ const MainPage: FC = () => {
 	const [FILMS, set_FILMS] = useState<Array<object>>(FILMS_ALL);
 	const [currentYear, setCurrentYear] = useState<string>("2020");
 	const [activeGeners, setActiveGeners] = useState<Array<number | undefined>>([]);
-
+	const isAuthorized = useSelector<IisAuthorized>(state => state.isAuthorized);
+	
 
 	const setNewActiveGeners = useCallback((activeGener: number): void => {
 		let newGenersList = [...activeGeners];
@@ -37,7 +39,7 @@ const MainPage: FC = () => {
 		const SelectPopularityElement: any = document.getElementById('Select-Popularity');
 		SelectPopularityElement.selectedIndex = 0;
 		const SelectListElement: any = document.getElementById('Select-FavoriteToRead');
-		SelectListElement.selectedIndex = 0;
+		if(isAuthorized) SelectListElement.selectedIndex = 0;
 		const Checkboxes: any = document.querySelectorAll('.checkbox_input');
 		Checkboxes.forEach((item: { checked: boolean; }) => item.checked = false);
 	}, []);

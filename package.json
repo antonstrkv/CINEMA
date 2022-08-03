@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://starikov03.github.io/",
+  "homepage": "https://starikov03.github.io/CINEMA",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
