@@ -1,5 +1,7 @@
 # CINEMA
 
+DEMO - https://www.youtube.com/watch?v=QmCnJMij2_c
+
 Technology: JavaScript, React, Redux, TypeScript, React Router, ESLint, Prettier, Rewire-alias
 
 
